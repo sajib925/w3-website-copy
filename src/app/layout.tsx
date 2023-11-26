@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Jost,Josefin_Sans } from 'next/font/google'
+import {Josefin_Sans,Jost } from 'next/font/google'
 import './globals.css'
 
-const jost= Jost({ subsets: ['latin'] })
 const josefin_sans= Josefin_Sans({ subsets: ['latin'] })
+const jost= Jost({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jost.className}${josefin_sans.className}`}>{children}</body>
+      <body className={`${josefin_sans.className}${jost.className}`}> {children}</body>
     </html>
   )
 }

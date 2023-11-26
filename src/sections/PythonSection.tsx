@@ -10,7 +10,7 @@ export const PythonSection = () => {
                         <h2 className="text-black text-[100px] font-bold -mt-[10px]">Python</h2>
                         <p className={"text-black text-[19px] font-semibold"}>A popular programming language</p>
 
-                        <Button className="bg-[#04AA6D] hover:bg-[#059862] text-white" btnLink="python_page"
+                        <Button className="bg-[#04AA6D] hover:bg-[#059862] text-white" btnLink="python_home"
                                 btnText="Learn Python"/>
                         <Button className="bg-[#FFF4A3] hover:bg-[#96D4D4] text-black" btnLink="#"
                                 btnText="Video Tutorial"/>

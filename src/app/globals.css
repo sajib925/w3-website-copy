@@ -2,23 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
-body {
-}
 
-/*.hero-bg-image{*/
-/*  background-image: url("public/image/use-svg-as-background-image-particle-strokes.svg");*/
-/*}*/
+@layer components {
+    .H2{
+        @apply text-[24px] md:text-[36px] lg:text-[52px] font-normal text-blackColor font-josefin
+    }
+    .H3{
+        @apply text-[20px] md:text-[24px] lg:text-[32px] font-normal text-blackColor font-josefin my-[10px]
+    }
+    .H4{
+        @apply text-[18px] md:text-[20px] lg:text-[24px] font-normal text-blackColor font-josefin
+    }
+    .Primary-paragraph{
+        @apply text-[16px] text-blackColor font-jost
+    }
+    .text-link {
+        @apply hover:text-primaryColor transition-all duration-300
+    }
+    .text-highlighter {
+        @apply text-textHighlighter p-1 bg-grayColor
+    }
+    .text-bold {
+        @apply text-[20px] font-semibold
+    }
+    .Sidebar-item{
+        @apply text-[16px] text-blackColor font-jost block hover:bg-sidebarHoverColor transition-all duration-300
+    }
+    .Sidebar-active{
+        @apply bg-primaryColor text-whiteColor
+    }
+    .box-style-primary {
+        @apply flex items-start flex-col gap-[18px] pt-[22px] pb-[32px] border-y-[1px] border-grayColor
+    }
+    .list-items-style{
+        @apply flex items-start flex-col gap-[8px] pl-[32px]
+    }
+    .list-item-style{
+        @apply list-disc text-[16px] text-blackColor font-jost
+    }
+    .navigate-buttons-style{
+        @apply flex items-center justify-between pt-[40px]
+    }
+
+}

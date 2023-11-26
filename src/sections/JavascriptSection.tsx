@@ -10,7 +10,7 @@ export const JavascriptSection = () => {
                         <h2 className="text-white text-[100px] font-bold -mt-[10px]">Javascript</h2>
                         <p className={"text-white text-[19px] font-semibold"}>The language for building web pages</p>
 
-                        <Button className="bg-[#04AA6D] hover:bg-[#059862] text-white" btnLink="javascript_page"
+                        <Button className="bg-[#04AA6D] hover:bg-[#059862] text-white" btnLink="javascript_home"
                                 btnText="Learn Javascript"/>
                         <Button className="bg-[#FFF4A3] hover:bg-[#E7E9EB] text-black" btnLink="#"
                                 btnText="Video Tutorial"/>

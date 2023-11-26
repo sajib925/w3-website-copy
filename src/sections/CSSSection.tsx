@@ -10,7 +10,7 @@ export const CSSSection = () => {
                         <h2 className="text-black text-[100px] font-bold -mt-[10px]">CSS</h2>
                         <p className={"text-black text-[19px] font-semibold"}>The language for styling web pages</p>
 
-                        <Button className="bg-[#04AA6D] hover:bg-[#059862] text-white" btnLink="css_page"
+                        <Button className="bg-[#04AA6D] hover:bg-[#059862] text-white" btnLink="css_home"
                                 btnText="Learn CSS"/>
                         <Button className="bg-[#ffffff] hover:bg-[#E7E9EB] text-black" btnLink="#"
                                 btnText="Video Tutorial"/>

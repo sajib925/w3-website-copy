@@ -13,6 +13,20 @@ const config: Config = {
       backgroundImage: {
         'hero-pattern': "url('/image/use-svg-as-background-image-particle-strokes.svg')",
       },
+      fontFamily: {
+        josefin: ["Josefin Sans, sans-serif"],
+        jost: ["Jost, sans-serif"],
+
+      },
+      colors: {
+        primaryColor: "#04AA6D",
+        hoverPrimaryColor: "#059862",
+        blackColor: "#121212",
+        whiteColor: "#fff",
+        grayColor: "#eee",
+        sidebarHoverColor: "#cccccc",
+        textHighlighter: "#ed143d"
+      },
       boxShadow: {
         cardShadow: "0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)",
       },
