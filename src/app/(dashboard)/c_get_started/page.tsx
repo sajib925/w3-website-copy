@@ -2,9 +2,16 @@ import {ButtonSecondary} from "@/libs/buttons/button";
 import Link from "next/link";
 import Image from "next/image";
 import img from "src/assets/images/code-blocks.png"
-import {CodeSnippet} from "@/components/CodeSnippet";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import {dracula} from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const CGetStarted = () => {
+    const codeString = '#include <stdio.h>\n' +
+        '\n' +
+        'int main() {\n' +
+        'printf("Hello World");\n' +
+        'return0;\n' +
+        '}';
     return (
         <div>
             <h2 className="H3 lg-space-bottom">চলুন শুরু করি C দিয়ে।</h2>
@@ -52,7 +59,11 @@ const CGetStarted = () => {
 
             </div>
 
-            <CodeSnippet />
+           <div className="code-highlighter-wrap">
+               <SyntaxHighlighter language="c" style={dracula}>
+                   {codeString}
+               </SyntaxHighlighter>
+           </div>
 
             <div className="box-style-primary">
                 <p className="Primary-paragraph">আপনি যদি উপরের কোডটি বুঝতে না পারেন তবে চিন্তা করবেন না - আমরা পরবর্তী
