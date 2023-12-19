@@ -23,8 +23,8 @@ export const CSection = () => {
                     <div className="p-[3%] w-full lg:w-[49.50%]">
                         <div style={{boxShadow: "0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)"}}>
                             <div className="p-[16px] bg-[#E7E9EB]">
-                                <h3 className="text-[24px] font-semibold py-2]">Javascript Example:</h3>
-                                <div className="p-[12px] py-[16px] border-l-[4px] border-l-[#04AA6D] bg-white">
+                                <h3 className="H4 py-2">C Example:</h3>
+                                <div className="p-[12px] my-[16px] border-l-[4px] border-l-[#04AA6D] bg-white">
                                     <div className="h-[210px]">
                                         <span className="text-black" >{"#include <stdio.h>"}</span><br/><br/>
                                         <span className="text-[#0000cd]">int</span>
