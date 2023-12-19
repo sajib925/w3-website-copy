@@ -2,13 +2,13 @@ import {ButtonSecondary} from "@/libs/buttons/button";
 import Link from "next/link";
 import Image from "next/image";
 import img from "src/assets/images/code-blocks.png"
+import {CodeSnippet} from "@/components/CodeSnippet";
 
 const CGetStarted = () => {
     return (
         <div>
-            <h2 className="H2 mb-[50px]">চলুন শুরু করি C এর সাথে।</h2>
+            <h2 className="H3 lg-space-bottom">চলুন শুরু করি C দিয়ে।</h2>
             <div className="box-style-primary">
-                <h3 className="H3">চলুন শুরু করি C দিয়ে।</h3>
                 <p className="Primary-paragraph">C প্রোগ্রামিং ল্যাংগুয়েজটি শিখা শুরু করতে, আপনার দুটি জিনিসের প্রয়োজন
                     হবে:</p>
                 <ul className="list-items-style">
@@ -51,21 +51,9 @@ const CGetStarted = () => {
                         className="text-bold">{".c"} </span> দিতে হবে।</p>
 
             </div>
-            <div className="w-full bg-grayColor p-4 rounded-3xl">
-                <h4 className="H4 font-normal py-2">myfirstprogram.c</h4>
-                <div className="p-[12px] py-[16px] border-l-[4px] border-l-[#04AA6D] bg-white">
-                    <span className="text-black">{"#include <stdio.h>"}</span><br/><br/>
-                    <span className="text-[#0000cd]">int</span>
-                    <span className="text-black">{"  main() {"}</span><br/>
-                    <span className="pl-4 text-black">{"printf("}</span>
-                    <span className="text-[#a52a2a]">{"\"Hello World\""}</span>
-                    <span className="text-black">{");"}</span><br/>
-                    <span className="text-[#0000cd] pl-4">return</span>
-                    <span className="text-[red] pl-2">0</span>
-                    <span className="text-black">{";"}</span><br/>
-                    <span className="text-black">{"}"}</span>
-                </div>
-            </div>
+
+            <CodeSnippet />
+
             <div className="box-style-primary">
                 <p className="Primary-paragraph">আপনি যদি উপরের কোডটি বুঝতে না পারেন তবে চিন্তা করবেন না - আমরা পরবর্তী
                     অধ্যায়গুলিতে এটি বিস্তারিতভাবে আলোচনা করব। আপাতত, কোডটি কীভাবে রান করানো যায় সেই দিকে মনোনিবেশ
@@ -91,7 +79,7 @@ const CGetStarted = () => {
 
             <div className="navigate-buttons-style">
                 <ButtonSecondary btnLink={"/c_introduction"} btnText={"❮ পূর্ববর্তী অধ্যায়"}/>
-                <ButtonSecondary btnLink={"c_get_syntax"} btnText={"পরবর্তী অধ্যায় ❯"}/>
+                <ButtonSecondary btnLink={"c_syntax"} btnText={"পরবর্তী অধ্যায় ❯"}/>
             </div>
 
         </div>

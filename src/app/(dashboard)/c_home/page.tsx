@@ -1,10 +1,18 @@
-import {Button, ButtonSecondary} from "@/libs/buttons/button";
+import { ButtonSecondary} from "@/libs/buttons/button";
+import {dracula} from "react-syntax-highlighter/dist/esm/styles/hljs";
+import SyntaxHighlighter from "react-syntax-highlighter";
 
 
 const Home = () => {
+    const codeString = '#include <stdio.h>\n' +
+        '\n' +
+        'int main() {\n' +
+        'printf("Hello World");\n' +
+        'return0;\n' +
+        '}';
     return (
             <div>
-                <h2 className="H2 mb-[50px]">C প্রোগ্রামিং ল্যাংগুয়েজের টিউটরিয়াল</h2>
+                <h2 className="H3 lg-space-bottom">C প্রোগ্রামিং ল্যাংগুয়েজের টিউটরিয়াল</h2>
                 <div className="box-style-primary bg-[#D9EEE1] pl-6 rounded-3xl">
                     <h3 className="H3">C শিখা শুরু করি</h3>
                     <p className="Primary-paragraph">C একটি প্রোগ্রামিং ভাষা। এটাকে প্রোগ্রামিংয়ের মাদার ল্যাংগুয়েজ বলা হয়। এটি ডেভেলপ করেন ডেনিস রিচি, বেল ল্যাবে ৭০এর দশকে কাজ করার সময়।</p>
@@ -16,21 +24,10 @@ const Home = () => {
                     <h3 className="H3">প্রতিটি অধ্যায়ে উদাহরণ</h3>
                     <p className="Primary-paragraph">আমাদের {"Try it Yourself »"} এ করলে আপনি কোড এডিট করতে পারবেন এবং ব্রাউজারে আউটপুট দেখতে পারবেন। এটি আপনার C শিখার জার্নি আনেক সহজ করে তুলবে। </p>
                 </div>
-                <div className="w-full bg-grayColor p-4 rounded-3xl">
-                    <h4 className="H4 font-normal py-2">Example</h4>
-                    <div className="p-[12px] py-[16px] border-l-[4px] border-l-[#04AA6D] bg-white">
-                        <span className="text-black">{"#include <stdio.h>"}</span><br/><br/>
-                        <span className="text-[#0000cd]">int</span>
-                        <span className="text-black">{"  main() {"}</span><br/>
-                        <span className="pl-4 text-black">{"printf("}</span>
-                        <span className="text-[#a52a2a]">{"\"Hello World\""}</span>
-                        <span className="text-black">{");"}</span><br/>
-                        <span className="text-[#0000cd] pl-4">return</span>
-                        <span className="text-[red] pl-2">0</span>
-                        <span className="text-black">{";"}</span><br/>
-                        <span className="text-black">{"}"}</span>
-                    </div>
-                    <ButtonSecondary btnLink="#" btnText={"Try it Yourself »"} className={"mt-6"} />
+                <div className="code-highlighter-wrap">
+                    <SyntaxHighlighter language="c" style={dracula}>
+                        {codeString}
+                    </SyntaxHighlighter>
                 </div>
                 <div className="box-style-primary bg-[#ffffcc] mt-[32px] pl-6 rounded-3xl">
                     <p className="Primary-paragraph">এটি কীভাবে কাজ করে তা দেখতে {"Try it Yourself »"} বাটনে ক্লিক করুন।</p>

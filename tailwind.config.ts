@@ -19,8 +19,8 @@ const config: Config = {
 
       },
       colors: {
-        primaryColor: "#04AA6D",
-        hoverPrimaryColor: "#059862",
+        primaryColor: "#004225",
+        hoverPrimaryColor: "#008080",
         blackColor: "#121212",
         whiteColor: "#fff",
         grayColor: "#eee",
