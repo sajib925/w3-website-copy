@@ -5,10 +5,10 @@ export const PythonSection = () => {
     return (
         <section className="py-[32px] bg-[#F3ECEA]">
             <div className="max-w-[1020px] w-full mx-auto px-4 h-full">
-                <div className="flex items-center justify-center">
-                    <div className="p-[3%] flex flex-col items-center justify-center gap-y-[16px] w-[49.50%]">
-                        <h2 className="text-black text-[100px] font-bold -mt-[10px]">Python</h2>
-                        <p className={"text-black text-[19px] font-semibold"}>A popular programming language</p>
+                <div className="flex items-center justify-center flex-wrap">
+                    <div className="p-[3%] flex flex-col items-center justify-center gap-y-[16px] w-full lg:w-[49.50%]">
+                        <h2 className="H2 -mt-[10px]">Python</h2>
+                        <p className={"H4"}>A popular programming language</p>
 
                         <Button className="bg-[#04AA6D] hover:bg-[#059862] text-white" btnLink="python_home"
                                 btnText="Learn Python"/>
@@ -20,7 +20,7 @@ export const PythonSection = () => {
                                 btnText="Get Certified"/>
 
                     </div>
-                    <div className="p-[3%] w-[49.50%]">
+                    <div className="p-[3%] w-full lg:w-[49.50%]">
                         <div style={{boxShadow: "0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)"}}>
                             <div className="p-[16px] bg-[#E7E9EB]">
                                 <h3 className="text-[24px] font-semibold py-2]">Javascript Example:</h3>

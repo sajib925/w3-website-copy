@@ -24,6 +24,9 @@
     .lg-space-y{
         @apply my-[32px]
     }
+    .H1{
+        @apply text-white text-[32px] md:text-[65px] lg:text-[100px] font-bold
+    }
     .H2{
         @apply text-[24px] md:text-[36px] lg:text-[52px] font-normal text-blackColor font-josefin
     }

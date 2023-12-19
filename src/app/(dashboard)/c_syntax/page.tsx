@@ -1,4 +1,3 @@
-import {CodeSnippet} from "@/components/CodeSnippet";
 import {BoldText, HighlightText} from "@/libs/HighlightText/HighlightText";
 import {ButtonSecondary} from "@/libs/buttons/button";
 import SyntaxHighlighter from 'react-syntax-highlighter';
