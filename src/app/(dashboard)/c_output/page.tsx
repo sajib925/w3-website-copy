@@ -56,8 +56,8 @@ const COutput = () => {
 
             </p>
             <div className="navigate-buttons-style">
-                <ButtonSecondary btnLink={"/c_get_started"} btnText={"❮ পূর্ববর্তী অধ্যায়"}/>
-                <ButtonSecondary btnLink={"c_output"} btnText={"পরবর্তী অধ্যায় ❯"}/>
+                <ButtonSecondary btnLink={"/c_syntax"} btnText={"❮ পূর্ববর্তী অধ্যায়"}/>
+                <ButtonSecondary btnLink={"/c_comments"} btnText={"পরবর্তী অধ্যায় ❯"}/>
             </div>
         </div>
     )

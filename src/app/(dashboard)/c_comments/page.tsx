@@ -70,8 +70,8 @@ const CComments = () => {
                 <BoldText boldText={"যেনে রাখা ভালো:"}/>{" "} <BoldText boldText={"C99 (released in 1999)"}/> ভার্সন রিলিজ হওয়ার পূর্বে শুধু মাল্টি লাইন কমেন্টস ছিল, সিঙ্গেল লাইন কমেন্টস ছিলনা।
             </p>
             <div className="navigate-buttons-style">
-                <ButtonSecondary btnLink={"/c_get_started"} btnText={"❮ পূর্ববর্তী অধ্যায়"}/>
-                <ButtonSecondary btnLink={"c_output"} btnText={"পরবর্তী অধ্যায় ❯"}/>
+                <ButtonSecondary btnLink={"/c_output"} btnText={"❮ পূর্ববর্তী অধ্যায়"}/>
+                <ButtonSecondary btnLink={"c_variables"} btnText={"পরবর্তী অধ্যায় ❯"}/>
             </div>
         </div>
     )
