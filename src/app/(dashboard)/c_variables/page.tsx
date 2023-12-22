@@ -6,18 +6,20 @@ import {ButtonSecondary} from "@/libs/buttons/button";
 
 const CVaribales = () => {
 
+    const codeString = '#include <stdio.h>\n' +
+        '\n' +
+        'int main() {\n\n' +
+        'int myNum = 50;\n' +
+        'printf(myNum);\n' +
+        '//এখানে কোন আউটপুট দেখাবে না কারণ এখানে কোন ফরমেট স্পেসিফায়ার ব্যবহার করা হয়নি\n'+
+        'return0;\n' +
+        '}';
     const codeString2 = '#include <stdio.h>\n' +
         '\n' +
         'int main() {\n\n' +
-        'printf("Hello World");' +
-        '//এটা একটা সিঙ্গেল লাইন কমেন্ট\n \n'+
-        'return0;\n' +
-        '}';
-    const codeString3 = '#include <stdio.h>\n' +
-        '\n' +
-        'int main() {\n\n' +
-        '/*এটা একটা মাল্টি লাইন কমেন্ট\n' +
-        'নিচের লাইনে Hello World প্রিন্ট করা হয়েছে।*/\n\n'+
+        'int myNum = 50;\n' +
+        'printf("%d", myNum);\n' +
+        '//এখানে 50 আউটপুট দেখাবে কারণ এখানে ফরমেট স্পেসিফায়ার ব্যবহার করা হয়েছে।\n'+
         'printf("Hello World");\n' +
         'return0;\n' +
         '}';
@@ -42,7 +44,7 @@ const CVaribales = () => {
             </p>
             <h3 className="H4 md-space-y">C ভ্যরিয়েবলস ডিক্লেয়ার</h3>
             <p className="Primary-paragraph md-space-bottom">
-                আপনি যদি একটা ভ্যরিয়েবল ডিক্লেয়ার করতে চান তাহলে, প্রথমে যে টাইপের ডাটা স্টোর করতে চান সেই টাইপ লিখতে হবে। ইন্টিজার টাইপ হলে <HighlightText highlightText={"int"}/>, ফ্লটিং টাইপ হলে <HighlightText highlightText={"float"}/> এবং ক্যারেক্টার টাইপ হলে  <HighlightText highlightText={"char"}/> তারপর ভ্যরিয়েবলের একটি নাম যেমন <HighlightText highlightText={"myVariable"}/> নাম আপনি যেকোন কিছুই দিতে পারেন, তারপর <HighlightText highlightText={"="}/> ইকুয়াল সাইন,  তারপর ভ্যরিয়েবলের ভ্যালু দিতে হবে। নিচে উদাহরণ এর মাধ্যমে দেখানো হল
+                আপনি যদি একটা ভ্যরিয়েবল ডিক্লেয়ার করতে চান তাহলে, প্রথমে যে টাইপের ডাটা স্টোর করতে চান সেই টাইপ লিখতে হবে। ইন্টিজার টাইপ হলে <HighlightText highlightText={"int"}/>, ফ্লটিং টাইপ হলে <HighlightText highlightText={"float"}/> এবং ক্যারেক্টার টাইপ হলে  <HighlightText highlightText={"char"}/> তারপর ভ্যরিয়েবলের একটি নাম যেমন <HighlightText highlightText={"myVariable"}/> নাম আপনি যেকোন কিছুই দিতে পারেন, তবে মিনিংফুল নাম দেয়া ভালো, যাতে আপনি পরে বুজতে পারেন। তারপর <HighlightText highlightText={"="}/> ইকুয়াল সাইন,  তারপর ভ্যরিয়েবলের ভ্যালু দিতে হবে। নিচে উদাহরণ এর মাধ্যমে দেখানো হল
             </p>
             <div className="code-highlighter-wrap">
                 <p className="Primary-paragraph md-space-bottom">
@@ -55,28 +57,28 @@ const CVaribales = () => {
                     <HighlightText highlightText={"char myChar = 'a';"}/>
                 </p>
             </div>
+            <h3 className="H4 md-space-y">C ফরমেট স্পেসিফায়ার</h3>
             <p className="Primary-paragraph md-space-y">
-                সিঙ্গেল লাইন কমেন্টস আপনি চাইলে নিচের উদাহরণের মত একটি ফাঙ্কশনের পাশে করতে পারবেন, আবার দরকার হলে উপরের উদাহরণের মত উপরে বা নিচে করতে পারবেন।
+                ডায়নামিক প্রোগ্রামিং ল্যাঙ্গুয়েজ যেমন <HighlightText highlightText={"C++, Python, Java, Javascript etc"}/> এইগুলোতে প্রিন্টএফ ফাঙ্কশনের ভিতর এইভাবে সরাসরি <HighlightText highlightText={"printf(myNum);"}/> ভ্যারিয়েবলের নাম লিখলেই আউটপুট পাওয়া যায়। কিন্তু <HighlightText highlightText={"C"}/> তে যে ডাটা টাইপের ভ্যালু আমরা চাচ্ছি সেটার ফরমেট স্পেসিফায়ার লিখতে হয়। চলুন উদাহরণ এর মাধ্যমে এক্সপ্লোর করা যাক।
             </p>
-            <div className="code-highlighter-wrap">
+            <div className="">
+                <SyntaxHighlighter language="c" style={dracula}>
+                    {codeString}
+                </SyntaxHighlighter>
+            </div>
+
+            <p className="Primary-paragraph md-space-y">
+                উপরের উদাহরণটিতে কোন আউটপুট দেখাবে না কারণ সেখানে কোন ফরমেট স্পেসিফায়ার ব্যবহার করা হয়নি, কিন্তু নিচের উদাহরণটিতে 50 আউটপুট দেখাবে কারণ এখানে ফরমেট স্পেসিফায়ার ব্যবহার করা হয়েছে।
+            </p>
+
+            <div className="">
                 <SyntaxHighlighter language="c" style={dracula}>
                     {codeString2}
                 </SyntaxHighlighter>
             </div>
-
-            <h3 className="H4 md-space-y">মাল্টি লাইন কমেন্টস।</h3>
-            <p className="Primary-paragraph md-space-bottom">
-                মাল্টি লাইন কমেন্টস শুরু হয় একটি ফরওয়ার্ড স্লাশ ও একটি স্টার <HighlightText highlightText={"/*"}/> দিয়ে, এটা যেহেতু মাল্টি লাইন কমেন্টস তাই এটা ক্লোজ করতে হয় একটি স্টার ও একটি ফরওয়ার্ড স্লাশ <HighlightText highlightText={"*/"}/> দিয়ে।  একটি ফরওয়ার্ড স্লাশ ও একটি স্টার <HighlightText highlightText={"/*"}/> লিখে, ভিতরে আমরা যাই লিখব সেটাই কমেন্টস হিসেবে বিবেচিত হবে এবং আমাদের কম্পপাইলার সেটাকে ইগনোর করবে। একটি স্টার ও একটি ফরওয়ার্ড স্লাশ <HighlightText highlightText={"*/"}/> দিয়ে আমরা এটাকে ক্লোজ করে দিব। নিচে একটি ডাবল লাইন কমেন্টসের উদাহরণ দেখানো হল:
-            </p>
-
-            <div className="code-highlighter-wrap">
-                <SyntaxHighlighter language="c" style={dracula}>
-                    {codeString3}
-                </SyntaxHighlighter>
-            </div>
-            <h3 className="H4 md-space-y">সিঙ্গেল নাকি মাল্টি লাইন কমেন্টস, কোনটা ব্যবহার করব?</h3>
+            <h3 className="H4 md-space-y">ফরমেট স্পেসিফায়ার কি? কখন ফরমেট স্পেসিফায়ার ব্যবহার করব?</h3>
             <p className="Primary-paragraph sm-space-bottom">
-                এটা সম্পূর্ণ আপনার উপর আপনি কোনটা ব্যবহার করবেন, ছোট কমেন্টসের জন্য আমরা এইটা <HighlightText highlightText={"//"}/> বড় কমেন্টসের জন্য <HighlightText highlightText={"/**/"}/> এইটা ব্যবহার করি।
+                {"সি-তে ফরমেট ্পেসিফায়ার হ'ল প্রিন্টএফ এবং স্ক্যানেএফের মতো ফাংশনগুলির মধ্যে ফর্ম্যাট স্ট্রিংগুলিতে ব্যবহৃত প্লেসহোল্ডার যা মুদ্রিত বা পড়া হবে এমন ডেটার ধরণ এবং বিন্যাস নির্দেশ করে। তারা কম্পাইলারকে বলে যে কী ধরণের ডেটা আশা করতে হবে এবং কীভাবে এটি ব্যাখ্যা করতে হবে। বিন্যাস নির্দিষ্টকারীরা একটি শতাংশ চিহ্ন (%) দিয়ে শুরু হয় এবং একটি অক্ষর দ্বারা অনুসরণ করা হয় যা ডেটা টাইপের প্রতিনিধিত্ব করে।"}
             </p>
             <p className="Primary-paragraph">
                 <BoldText boldText={"যেনে রাখা ভালো:"}/>{" "} <BoldText boldText={"C99 (released in 1999)"}/> ভার্সন রিলিজ হওয়ার পূর্বে শুধু মাল্টি লাইন কমেন্টস ছিল, সিঙ্গেল লাইন কমেন্টস ছিলনা।
