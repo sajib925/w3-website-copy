@@ -12,7 +12,7 @@ const CVaribales = () => {
         'int myNum = 50;\n' +
         'printf(myNum);\n' +
         '//এখানে কোন আউটপুট দেখাবে না কারণ এখানে কোন ফরমেট স্পেসিফায়ার ব্যবহার করা হয়নি\n'+
-        'return0;\n' +
+        'return 0;\n' +
         '}';
     const codeString2 = '#include <stdio.h>\n' +
         '\n' +
@@ -20,9 +20,66 @@ const CVaribales = () => {
         'int myNum = 50;\n' +
         'printf("%d", myNum);\n' +
         '//এখানে 50 আউটপুট দেখাবে কারণ এখানে ফরমেট স্পেসিফায়ার ব্যবহার করা হয়েছে।\n'+
-        'printf("Hello World");\n' +
-        'return0;\n' +
+        'return 0;\n' +
         '}';
+    const codeString3 = '#include <stdio.h>\n' +
+        '\n' +
+        'int main() {\n\n' +
+        'int myNum = 50;\n' +
+        'printf("আমার পছন্দের নাম্বার হচ্ছে: %d", myNum);\n' +
+        '//এখানে আউটপুট দেখাবে আমার পছন্দের নাম্বার হচ্ছে: 10\n'+
+        'return 0;\n' +
+        '}';
+    const codeString4 = '#include <stdio.h>\n' +
+        '\n' +
+        'int main() {\n\n' +
+        'int myNum = 50;\n' +
+        'char myChar = b;\n' +
+        'printf("আমার পছন্দের নাম্বার হচ্ছে: %d এবং পছন্দের লেটার হচ্ছে: %c", myNum, myChar);\n' +
+        '//এখানে আউটপুট দেখাবে, আমার পছন্দের নাম্বার হচ্ছে: 10 এবং পছন্দের লেটার হচ্ছে: b\n'+
+        'return 0;\n' +
+        '}';
+    const codeString5 = '#include <stdio.h>\n' +
+        '\n' +
+        'int main() {\n\n' +
+        'int myNum = 50;\n' +
+        'int otherNum = 20;\n' +
+        'otherNum = myNum;\n' +
+        'printf("%d", otherNum);\n' +
+        '//এখানে আউটপুট দেখাবে 20 \n'+
+        'return 0;\n' +
+        '}';
+    const codeString6 = '#include <stdio.h>\n' +
+        '\n' +
+        'int main() {\n\n' +
+        'int myNum = 50;\n' +
+        'myNum = 40;\n' +
+        'printf("%d", myNum);\n' +
+        '//এখানে আউটপুট দেখাবে 40, কারণ এখানে myNum এর ভ্যালু রিএস্যাইন করা হয়েছে। \n'+
+        'return 0;\n' +
+        '}';
+    const codeString7 = '#include <stdio.h>\n' +
+        '\n' +
+        'int main() {\n\n' +
+        'int myNum;\n' +
+        'myNum = 20;\n' +
+        'printf("%d", myNum);\n' +
+        '//এখানে আউটপুট দেখাবে 20, কারণ এখানে এম্পটি ভ্যারিএবল myNum এর ভিতর ভ্যালু এস্যাইন করা হয়েছে। \n'+
+        'return 0;\n' +
+        '}';
+    const codeString8 = '#include <stdio.h>\n' +
+        '\n' +
+        'int main() {\n\n' +
+        'int x = 10, y = 30, z = 50, sum;\n' +
+        'sum = x + y + z;\n' +
+        'printf("%d", sum);\n' +
+        '//এখানে আউটপুট দেখাবে 90, \n'+
+        'return 0;\n' +
+        '}';
+    const codeString9 = 'int minutesPerHour = 60;\n' +
+        'int m = 60;\n' +
+        '//এখানে উপরের নাম দ্বারা বুঝা যাচ্ছে যে ১ ঘণ্টায় কত মিনিট সেটা বুঝাচ্ছে, কিন্তু নিচের লাইন দ্বারা বুঝা যাচ্ছে না, \n'
+
     return(
         <div  className="">
             <h2 className="H3 md-space-bottom">আজকে আমরা C প্রোগ্রামিংয়ের ভ্যরিয়েবলস সম্পর্কে জানবো।</h2>
@@ -68,7 +125,7 @@ const CVaribales = () => {
             </div>
 
             <p className="Primary-paragraph md-space-y">
-                উপরের উদাহরণটিতে কোন আউটপুট দেখাবে না কারণ সেখানে কোন ফরমেট স্পেসিফায়ার ব্যবহার করা হয়নি, কিন্তু নিচের উদাহরণটিতে 50 আউটপুট দেখাবে কারণ এখানে ফরমেট স্পেসিফায়ার ব্যবহার করা হয়েছে।
+                উপরের উদাহরণটিতে কোন আউটপুট দেখাবে না এখানে কোন কারণ ফরমেট স্পেসিফায়ার ব্যবহার করা হয়নি, নিচে 50 আউটপুট দেখাবে কারণ এখানে ফরমেট স্পেসিফায়ার ব্যবহার করা হয়েছে।
             </p>
 
             <div className="">
@@ -77,12 +134,82 @@ const CVaribales = () => {
                 </SyntaxHighlighter>
             </div>
             <h3 className="H4 md-space-y">ফরমেট স্পেসিফায়ার কি? কখন ফরমেট স্পেসিফায়ার ব্যবহার করব?</h3>
-            <p className="Primary-paragraph sm-space-bottom">
-                {"সি-তে ফরমেট ্পেসিফায়ার হ'ল প্রিন্টএফ এবং স্ক্যানেএফের মতো ফাংশনগুলির মধ্যে ফর্ম্যাট স্ট্রিংগুলিতে ব্যবহৃত প্লেসহোল্ডার যা মুদ্রিত বা পড়া হবে এমন ডেটার ধরণ এবং বিন্যাস নির্দেশ করে। তারা কম্পাইলারকে বলে যে কী ধরণের ডেটা আশা করতে হবে এবং কীভাবে এটি ব্যাখ্যা করতে হবে। বিন্যাস নির্দিষ্টকারীরা একটি শতাংশ চিহ্ন (%) দিয়ে শুরু হয় এবং একটি অক্ষর দ্বারা অনুসরণ করা হয় যা ডেটা টাইপের প্রতিনিধিত্ব করে।"}
+            <li className="Primary-paragraph sm-space-bottom">
+                C-তে ফরমেট স্পেসিফায়ার হল একটি বিশেষ কোড যা প্রিন্টএফ এবং স্ক্যানফের মতো ফাংশনগুলিকে ডাটা টাইপ বুজতে সাহায্য করে যাতে ফাংশনগুলি ইনপুট নেয়ার সময় ও আউটপুট দেবার সময় বুজতে পারে এটা কোন ধরণের ডাটা টাইপ। তারা কম্পাইলারকে বলে যে কী ধরণের ডাটা আশা করতে হবে এবং কীভাবে এটি ব্যাখ্যা করতে হবে। ফরমেট স্পেসিফায়ার একটি পার্সেন্ট <BoldText boldText="%"/>  চিহ্ন দিয়ে শুরু হয় এবং একটি নির্দিষ্ট অক্ষর দ্বারা বুজানো হয় যে এটা কোন ডাটা টাইপের প্রতিনিধিত্ব করছে। নিচে গুরুত্বপূর্ণ কিছু ফরমেট স্পেসিফায়ার তুলে ধরা হল:
+            </li>
+            <li className="Primary-paragraph">
+               <HighlightText highlightText={"int"}/>{" "}<BoldText boldText={"ইন্টিজার টাইপের জন্য ব্যবহৃত হয়"}/>{" "} <HighlightText highlightText={"%d or %i"}/>
+            </li>
+            <li className="Primary-paragraph">
+                <HighlightText highlightText={"float"}/>{" "}<BoldText boldText={"ফ্লোট টাইপের জন্য ব্যবহৃত হয়"}/>{" "} <HighlightText highlightText={"%f"}/>
+            </li>
+            <li className="Primary-paragraph">
+                <HighlightText highlightText={"long long int/double"}/>{" "}<BoldText boldText={"লং লং ইন্টিজার টাইপের জন্য ব্যবহৃত হয়"}/>{" "} <HighlightText highlightText={"%ld"}/>
+            </li>
+            <li className="Primary-paragraph">
+                <HighlightText highlightText={"char"}/> {" "}<BoldText boldText={"ক্যারেক্টার টাইপের জন্য ব্যবহৃত হয়"}/>{" "} <HighlightText highlightText={"%c"}/>
+            </li>
+            <li className="Primary-paragraph">
+                <HighlightText highlightText={"string"}/> {" "}<BoldText boldText={"স্ট্রিং টাইপের জন্য ব্যবহৃত হয়"}/>{" "} <HighlightText highlightText={"%s"}/>
+            </li>
+
+            <p className="Primary-paragraph md-space-y">
+                আপনি চাইলে একটি প্রিন্টএফ ফাঙ্কশনের মধ্যে টেক্সট এবং ভ্যারিয়েবল এক সাথে প্রিন্ট করতে পারবেন যেমন:
             </p>
-            <p className="Primary-paragraph">
-                <BoldText boldText={"যেনে রাখা ভালো:"}/>{" "} <BoldText boldText={"C99 (released in 1999)"}/> ভার্সন রিলিজ হওয়ার পূর্বে শুধু মাল্টি লাইন কমেন্টস ছিল, সিঙ্গেল লাইন কমেন্টস ছিলনা।
+            <div className="">
+                <SyntaxHighlighter language="c" style={dracula}>
+                    {codeString3}
+                </SyntaxHighlighter>
+            </div>
+            <p className="Primary-paragraph md-space-y">
+                আপনি চাইলে একটি প্রিন্টএফ ফাঙ্কশনের মধ্যে টেক্সট এবং একাদিক ভ্যারিয়েবলের ডাটা এক সাথে প্রিন্ট করতে পারবেন যেমন:
             </p>
+            <div className="">
+                <SyntaxHighlighter language="c" style={dracula}>
+                    {codeString4}
+                </SyntaxHighlighter>
+            </div>
+            <p className="Primary-paragraph md-space-y">
+                আপনি চাইলে একটি ভ্যারিয়েবলের ভ্যালুকে রিএস্যাইন করতে পারবেন এবং একটি এম্পটি ভ্যারিয়েবলের ভিতর অন্য একটি ভ্যারিয়েবলের ভ্যালু এস্যাইন করতে পারবেন এবং এম্পটি ভ্যারিয়েবল ডিক্লেয়ার করে পরে ভ্যালু এস্যাইন করতে পারবেন। নিচের উদাহরণ দেখলে বিষয়টা আরও সহজ হয়ে যাবে।
+            </p>
+            <div className="">
+                <SyntaxHighlighter language="c" style={dracula}>
+                    {codeString5}
+                </SyntaxHighlighter>
+            </div>
+            <p className="Primary-paragraph md-space-y">
+                এখানে আউটপুট দেখাবে 20 কারণ otherNum এর ভিতর myNum এর ভ্যালু এস্যাইন করা হয়েছে, তাই এখানে 20 আউটপুট দেখাবে। এবং নিচে আউটপুট দেখাবে 40, কারণ এখানে myNum ভ্যালু রিএস্যাইন করা হয়েছে।
+            </p>
+            <div className="">
+                <SyntaxHighlighter language="c" style={dracula}>
+                    {codeString6}
+                </SyntaxHighlighter>
+            </div>
+            <p className="Primary-paragraph md-space-y">
+                এখানে আউটপুট দেখাবে 20 কারণ এখানে myNum প্রথমে এম্পটি থাকলেও পরে ভ্যালু এস্যাইন করা হয়েছে।
+            </p>
+            <div className="">
+                <SyntaxHighlighter language="c" style={dracula}>
+                    {codeString7}
+                </SyntaxHighlighter>
+            </div>
+            <p className="Primary-paragraph md-space-y">
+                আপনি চাইলে একই ধরণের একাধিক এম্পটি অথবা ভ্যালুসহ ভ্যারিএবল একসাথে ডিক্লেয়ার করতে পারবেন। এবং সেগুলোর উপর অপারেশন চালাতে পারবেন। নিচের উদাহরণটিতে <HighlightText highlightText={"x, y, z"}/> কে ভ্যালুসহ এবং {" "}<HighlightText highlightText={"sum"}/> কে এম্পটি ডিক্লেয়ার হয়েছে, তারপরের লাইনে <HighlightText highlightText={"x, y, z"}/> এর যোগফল <HighlightText highlightText={"sum"}/> -এ এস্যাইন করা হয়েছে:
+            </p>
+            <div className="">
+                <SyntaxHighlighter language="c" style={dracula}>
+                    {codeString8}
+                </SyntaxHighlighter>
+            </div>
+            <h3 className="H4 md-space-y">C ভ্যারিএবলের নামকরণ।</h3>
+            <p className="Primary-paragraph md-space-y">
+                C ভ্যারিএবলের নাম অবশ্যই একটি হতে অন্য আর একটি ইউনিক হতে হবে, ভ্যারিএবলের নাম সর্ট হতে পারে যেমন <HighlightText highlightText={"x, y, z"}/> অথবা বর্ণনামূলক বা মিনিংফুল হতে পারে যেমন <HighlightText highlightText={"age, sum, totalVolume"}/> আপনি যে কোন ধরণের নাম ব্যবহার করতে পারেন তবে বর্ণনামূলক মিনিংফুল নাম ব্যবহার করাই ভালো। একাধিক এম্পটি অথবা ভ্যালুসহ ভ্যারিএবল একসাথে ডিক্লেয়ার করতে পারবেন। এবং সেগুলোর উপর অপারেশন চালাতে পারবেন। নিচের উদাহরণটিতে <HighlightText highlightText={"x, y, z"}/> কে ভ্যালুসহ এবং {" "}<HighlightText highlightText={"sum"}/> কে এম্পটি ডিক্লেয়ার হয়েছে, তারপরের লাইনে <HighlightText highlightText={"x, y, z"}/> এর যোগফল <HighlightText highlightText={"sum"}/> -এ এস্যাইন করা হয়েছে:
+            </p>
+            <div className="">
+                <SyntaxHighlighter language="c" style={dracula}>
+                    {codeString9}
+                </SyntaxHighlighter>
+            </div>
             <div className="navigate-buttons-style">
                 <ButtonSecondary btnLink={"/c_comments"} btnText={"❮ পূর্ববর্তী অধ্যায়"}/>
                 <ButtonSecondary btnLink={"c_data_types"} btnText={"পরবর্তী অধ্যায় ❯"}/>
