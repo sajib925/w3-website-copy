@@ -101,7 +101,7 @@ const CVaribales = () => {
             </p>
             <h3 className="H4 md-space-y">C ভ্যরিয়েবলস ডিক্লেয়ার</h3>
             <p className="Primary-paragraph md-space-bottom">
-                আপনি যদি একটা ভ্যরিয়েবল ডিক্লেয়ার করতে চান তাহলে, প্রথমে যে টাইপের ডাটা স্টোর করতে চান সেই টাইপ লিখতে হবে। ইন্টিজার টাইপ হলে <HighlightText highlightText={"int"}/>, ফ্লটিং টাইপ হলে <HighlightText highlightText={"float"}/> এবং ক্যারেক্টার টাইপ হলে  <HighlightText highlightText={"char"}/> তারপর ভ্যরিয়েবলের একটি নাম যেমন <HighlightText highlightText={"myVariable"}/> নাম আপনি যেকোন কিছুই দিতে পারেন, তবে মিনিংফুল নাম দেয়া ভালো, যাতে আপনি পরে বুজতে পারেন। তারপর <HighlightText highlightText={"="}/> ইকুয়াল সাইন,  তারপর ভ্যরিয়েবলের ভ্যালু দিতে হবে। নিচে উদাহরণ এর মাধ্যমে দেখানো হল
+                আপনি যদি একটা ভ্যরিয়েবল ডিক্লেয়ার করতে চান তাহলে, প্রথমে যে টাইপের ডাটা স্টোর করতে চান সেই টাইপ লিখতে হবে। ইন্টিজার টাইপ হলে <HighlightText highlightText={"int"}/>, ফ্লটিং টাইপ হলে <HighlightText highlightText={"float"}/> এবং ক্যারেক্টার টাইপ হলে  <HighlightText highlightText={"char"}/> তারপর ভ্যরিয়েবলের একটি নাম যেমন <HighlightText highlightText={"myVariable"}/> নাম আপনি যেকোন কিছুই দিতে পারেন, তবে মিনিংফুল নাম দেয়া ভালো, যাতে আপনি পরে বুজতে পারেন। তারপর <HighlightText highlightText={"="}/> ইকুয়াল সাইন,  তারপর ভ্যরিয়েবলের ভ্যালু দিতে হবে। নিচে উদাহরণ এর মাধ্যমে দেখানো হল:
             </p>
             <div className="code-highlighter-wrap">
                 <p className="Primary-paragraph md-space-bottom">
@@ -116,7 +116,7 @@ const CVaribales = () => {
             </div>
             <h3 className="H4 md-space-y">C ফরমেট স্পেসিফায়ার</h3>
             <p className="Primary-paragraph md-space-y">
-                ডায়নামিক প্রোগ্রামিং ল্যাঙ্গুয়েজ যেমন <HighlightText highlightText={"C++, Python, Java, Javascript etc"}/> এইগুলোতে প্রিন্টএফ ফাঙ্কশনের ভিতর এইভাবে সরাসরি <HighlightText highlightText={"printf(myNum);"}/> ভ্যারিয়েবলের নাম লিখলেই আউটপুট পাওয়া যায়। কিন্তু <HighlightText highlightText={"C"}/> তে যে ডাটা টাইপের ভ্যালু আমরা চাচ্ছি সেটার ফরমেট স্পেসিফায়ার লিখতে হয়। চলুন উদাহরণ এর মাধ্যমে এক্সপ্লোর করা যাক।
+                হাই লেভেল প্রোগ্রামিং ল্যাঙ্গুয়েজ যেমন <HighlightText highlightText={"C++, Python, Java etc"}/> এইগুলোতে প্রিন্টএফ ফাঙ্কশনের ভিতর এইভাবে সরাসরি <HighlightText highlightText={"printf(myNum);"}/> ভ্যারিয়েবলের নাম লিখলেই আউটপুট পাওয়া যায়। কিন্তু <HighlightText highlightText={"C"}/> তে যে ডাটা টাইপের ভ্যালু আমরা চাচ্ছি সেটার ফরমেট স্পেসিফায়ার লিখতে হয়। চলুন উদাহরণ এর মাধ্যমে এক্সপ্লোর করা যাক।
             </p>
             <div className="">
                 <SyntaxHighlighter language="c" style={dracula}>
@@ -125,7 +125,7 @@ const CVaribales = () => {
             </div>
 
             <p className="Primary-paragraph md-space-y">
-                উপরের উদাহরণটিতে কোন আউটপুট দেখাবে না এখানে কোন কারণ ফরমেট স্পেসিফায়ার ব্যবহার করা হয়নি, নিচে 50 আউটপুট দেখাবে কারণ এখানে ফরমেট স্পেসিফায়ার ব্যবহার করা হয়েছে।
+                উপরের উদাহরণটিতে কোন আউটপুট দেখাবে না কারণ এখানে কোন ফরমেট স্পেসিফায়ার ব্যবহার করা হয়নি, নিচে 50 আউটপুট দেখাবে কারণ এখানে ফরমেট স্পেসিফায়ার ব্যবহার করা হয়েছে।
             </p>
 
             <div className="">
@@ -134,9 +134,9 @@ const CVaribales = () => {
                 </SyntaxHighlighter>
             </div>
             <h3 className="H4 md-space-y">ফরমেট স্পেসিফায়ার কি? কখন ফরমেট স্পেসিফায়ার ব্যবহার করব?</h3>
-            <li className="Primary-paragraph sm-space-bottom">
+            <p className="Primary-paragraph sm-space-bottom">
                 C-তে ফরমেট স্পেসিফায়ার হল একটি বিশেষ কোড যা প্রিন্টএফ এবং স্ক্যানফের মতো ফাংশনগুলিকে ডাটা টাইপ বুজতে সাহায্য করে যাতে ফাংশনগুলি ইনপুট নেয়ার সময় ও আউটপুট দেবার সময় বুজতে পারে এটা কোন ধরণের ডাটা টাইপ। তারা কম্পাইলারকে বলে যে কী ধরণের ডাটা আশা করতে হবে এবং কীভাবে এটি ব্যাখ্যা করতে হবে। ফরমেট স্পেসিফায়ার একটি পার্সেন্ট <BoldText boldText="%"/>  চিহ্ন দিয়ে শুরু হয় এবং একটি নির্দিষ্ট অক্ষর দ্বারা বুজানো হয় যে এটা কোন ডাটা টাইপের প্রতিনিধিত্ব করছে। নিচে গুরুত্বপূর্ণ কিছু ফরমেট স্পেসিফায়ার তুলে ধরা হল:
-            </li>
+            </p>
             <li className="Primary-paragraph">
                <HighlightText highlightText={"int"}/>{" "}<BoldText boldText={"ইন্টিজার টাইপের জন্য ব্যবহৃত হয়"}/>{" "} <HighlightText highlightText={"%d or %i"}/>
             </li>
@@ -194,7 +194,7 @@ const CVaribales = () => {
                 </SyntaxHighlighter>
             </div>
             <p className="Primary-paragraph md-space-y">
-                আপনি চাইলে একই ধরণের একাধিক এম্পটি অথবা ভ্যালুসহ ভ্যারিএবল একসাথে ডিক্লেয়ার করতে পারবেন। এবং সেগুলোর উপর অপারেশন চালাতে পারবেন। নিচের উদাহরণটিতে <HighlightText highlightText={"x, y, z"}/> কে ভ্যালুসহ এবং {" "}<HighlightText highlightText={"sum"}/> কে এম্পটি ডিক্লেয়ার হয়েছে, তারপরের লাইনে <HighlightText highlightText={"x, y, z"}/> এর যোগফল <HighlightText highlightText={"sum"}/> -এ এস্যাইন করা হয়েছে:
+                আপনি চাইলে একই ধরণের একাধিক এম্পটি অথবা ভ্যালুসহ ভ্যারিএবল একসাথে ডিক্লেয়ার করতে পারবেন। এবং সেগুলোর উপর অপারেশন চালাতে পারবেন। নিচের উদাহরণটিতে <HighlightText highlightText={"x, y, z"}/> কে ভ্যালুসহ এবং {" "}<HighlightText highlightText={"sum"}/> কে এম্পটি ডিক্লেয়ার করা হয়েছে, তারপরের লাইনে <HighlightText highlightText={"x, y, z"}/> এর যোগফল <HighlightText highlightText={"sum"}/> -এ এস্যাইন করা হয়েছে:
             </p>
             <div className="">
                 <SyntaxHighlighter language="c" style={dracula}>
@@ -203,13 +203,29 @@ const CVaribales = () => {
             </div>
             <h3 className="H4 md-space-y">C ভ্যারিএবলের নামকরণ।</h3>
             <p className="Primary-paragraph md-space-y">
-                C ভ্যারিএবলের নাম অবশ্যই একটি হতে অন্য আর একটি ইউনিক হতে হবে, ভ্যারিএবলের নাম সর্ট হতে পারে যেমন <HighlightText highlightText={"x, y, z"}/> অথবা বর্ণনামূলক বা মিনিংফুল হতে পারে যেমন <HighlightText highlightText={"age, sum, totalVolume"}/> আপনি যে কোন ধরণের নাম ব্যবহার করতে পারেন তবে বর্ণনামূলক মিনিংফুল নাম ব্যবহার করাই ভালো। একাধিক এম্পটি অথবা ভ্যালুসহ ভ্যারিএবল একসাথে ডিক্লেয়ার করতে পারবেন। এবং সেগুলোর উপর অপারেশন চালাতে পারবেন। নিচের উদাহরণটিতে <HighlightText highlightText={"x, y, z"}/> কে ভ্যালুসহ এবং {" "}<HighlightText highlightText={"sum"}/> কে এম্পটি ডিক্লেয়ার হয়েছে, তারপরের লাইনে <HighlightText highlightText={"x, y, z"}/> এর যোগফল <HighlightText highlightText={"sum"}/> -এ এস্যাইন করা হয়েছে:
+                C ভ্যারিএবলের নাম অবশ্যই একটি হতে অন্য আর একটি ইউনিক হতে হবে, ভ্যারিএবলের নাম সর্ট হতে পারে যেমন <HighlightText highlightText={"x, y, z"}/> অথবা বর্ণনামূলক বা মিনিংফুল হতে পারে যেমন <HighlightText highlightText={"age, sum, totalVolume"}/> আপনি যে কোন ধরণের নাম ব্যবহার করতে পারেন তবে বর্ণনামূলক বা মিনিংফুল নাম ব্যবহার করাই ভালো।
             </p>
             <div className="">
                 <SyntaxHighlighter language="c" style={dracula}>
                     {codeString9}
                 </SyntaxHighlighter>
             </div>
+            <h3 className="H4 md-space-y">C ভ্যরিয়েবলসের নাম দেয়ার কিছু সাধারণ নিয়ম</h3>
+            <li className="Primary-paragraph sm-space-bottom">
+                ভ্যরিয়েবলসের নামে লেটার <HighlightText highlightText={"a b c etc"}/>, নাম্বার <HighlightText highlightText={"1 2 3 etc"}/> এবং আন্ডারস্কোর <HighlightText highlightText={"(_)"}/> থাকতে পারে
+            </li>
+            <li className="Primary-paragraph sm-space-bottom">
+                ভ্যরিয়েবলসের নাম অবশ্যই কোন লেটার <HighlightText highlightText={"(_)"}/> বা আন্ডারস্কোর <HighlightText highlightText={"a b c etc"}/> দিয়ে শুরু করতে হবে।
+            </li>
+            <li className="Primary-paragraph sm-space-bottom">
+                ভ্যরিয়েবলসের নাম কেস সেনসেটিভ, আপনি একটা ভ্যরিয়েবলের নাম ক্যাপিটাল লেটার এবং আর একটার নাম স্মল লেটার দিয়ে লিখলে দুইটা ভিন্ন বলে গণ্য হবে <HighlightText highlightText={"mynum"}/> ও <HighlightText highlightText={"myNum"}/> এখানে দুইটা ভিন্ন বলে গণ্য হবে।
+            </li>
+            <li className="Primary-paragraph sm-space-bottom">
+                ভ্যরিয়েবলসের নামে কোন হোয়াইট স্পেস এবং কোন স্পেশাল ক্যারেকটার <HighlightText highlightText={" !, #, %, etc."}/> ব্যবহার করা যাবে না।
+            </li>
+            <li className="Primary-paragraph sm-space-bottom">
+                ভ্যরিয়েবলসের নামে কোন রিজারব ওয়ার্ড যেমন <HighlightText highlightText={"int"}/> ব্যবহার করা যাবে না।
+            </li>
             <div className="navigate-buttons-style">
                 <ButtonSecondary btnLink={"/c_comments"} btnText={"❮ পূর্ববর্তী অধ্যায়"}/>
                 <ButtonSecondary btnLink={"c_data_types"} btnText={"পরবর্তী অধ্যায় ❯"}/>
