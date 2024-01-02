@@ -1,38 +1,90 @@
+// "use client"
+//
+//
+//
+// interface TableProps<T> {
+//     data: T[];
+//     headerData: Array<{ [key: string]: string }>;
+// }
+//
+// const DynamicTable: React.FC<TableProps<{ col1: string; col2: string; col3: string ; col4?: string;}>> = ({ data, headerData }) => {
+//     return (
+//         <table className="table-auto w-full">
+//             <thead>
+//             {
+//                 headerData.map((header, index) => (
+//                     <tr key={index}>
+//                         {Object.values(header).map((title, columnIndex) => (
+//                             <th key={columnIndex} className="px-4 py-2 text-start">
+//                                 {title}
+//                             </th>
+//                         ))}
+//                     </tr>
+//                 ))
+//             }
+//             </thead>
+//             <tbody>
+//             {data.map((row, index) => (
+//                 <tr key={index} className={index % 2 === 0 ? "bg-gray-200" : "bg-white"}>
+//                     {Object.values(row).map((column, columnIndex) => (
+//                         <td key={columnIndex} className={`px-4 py-2 ${index % 2 === 0 ? "border border-gray-200" : "border border-white"}`}>
+//                             {column}
+//                         </td>
+//                     ))}
+//                 </tr>
+//             ))}
+//             </tbody>
+//         </table>
+//     );
+// };
+//
+// export default DynamicTable;
+//
+//
+//
+//
+//
+//
+//
 "use client"
-import React, { useState } from "react";
+import React from 'react';
 
-interface RowData {
-    [key: string]: string;
+interface TableProps<T> {
+    data: T[];
+    headerData: Array<{ [key: string]: string }>;
 }
 
-interface DynamicTableProps {
-    data: RowData[];
-    headers: string[];
-}
-
-export const DynamicTable: React.FC<DynamicTableProps> = ({ data, headers }) => {
-    const [tableData, setTableData] = useState(data);
-
+const DynamicTable: React.FC<TableProps<{ col1: string; col2: string; col3: string; col4?: string; }>> = ({ data, headerData }) => {
     return (
-        <table className="min-w-full bg-white border border-gray-300">
+        <table className="table-auto w-full border-2 border-[#E2E8F0]">
             <thead>
-            <tr>
-                {headers.map((header, index) => (
-                    <th key={index} className="py-2 px-4 border-b">
-                        {header}
-                    </th>
-                ))}
-            </tr>
+            {headerData.map((header, index) => (
+                <tr key={index}>
+                    {Object.values(header).map((title, columnIndex) => (
+                        <th key={columnIndex} className="px-4 py-2 text-start border border-[#E2E8F0]">
+                            {title}
+                        </th>
+                    ))}
+                </tr>
+            ))}
             </thead>
             <tbody>
-            {tableData.map((row, index) => (
+            {data.map((row, index) => (
                 <tr
                     key={index}
-                    className={index % 2 === 0 ? "bg-gray-200" : "bg-white"}
+                    style={{ backgroundColor: index % 2 === 0 ? "#E2E8F0" : "#FFFFFF" }}
                 >
-                    {headers.map((header, columnIndex) => (
-                        <td key={columnIndex} className="py-2 px-4 border-b">
-                            {row[header.toLowerCase()]}
+                    {Object.values(row).map((column, columnIndex) => (
+                        <td
+                            key={columnIndex}
+                            style={{
+                                padding: "8px",
+                                border: `1px solid ${
+                                    index % 2 === 0 ? "#FFFFFF" : "#E2E8F0"
+                                }`,
+                            }}
+                        >
+                            {column}
                         </td>
                     ))}
                 </tr>
@@ -42,29 +94,4 @@ export const DynamicTable: React.FC<DynamicTableProps> = ({ data, headers }) => 
     );
 };
 
-// how to use this
-
-// export default DynamicTable;
-//
-//
-// import React from "react";
-// import DynamicTable from "../components/DynamicTable";
-//
-// const Home: React.FC = () => {
-//     const tableData = [
-//         { column1: "Data 1", column2: "Data A", column3: "Info X", column4: "Value 1" },
-//         { column1: "Data 2", column2: "Data B", column3: "Info Y", column4: "Value 2" },
-//         // Add more data as needed
-//     ];
-//
-//     const tableHeaders = ["Header 1", "Header 2", "Header 3", "Header 4"];
-//
-//     return (
-//         <div className="container mx-auto my-8">
-//             <h1 className="text-3xl font-bold mb-4">Dynamic Table Example</h1>
-//             <DynamicTable data={tableData} headers={tableHeaders} />
-//         </div>
-//     );
-// };
-//
-// export default Home;
+export default DynamicTable;
