@@ -50,7 +50,7 @@ const CStrings = () => {
         <div  className="">
             <h2 className="H3 md-space-bottom">আজকে আমরা C প্রোগ্রামিংয়ের অন্যতম গুরুত্বপূর্ণ একটি টপিক স্ট্রিং সম্পর্কে জানবো।</h2>
             <p className="Primary-paragraph md-space-bottom">
-                সি প্রোগ্রামিং এ ক্যারেক্টারে(character) এর array কে স্ট্রিং বলা হয়। null(/0) ক্যারেক্টারের মাধ্যমে স্ট্রিং এর সমাপ্তি ঘটে। উদাহরনস্বরুপঃ <HighlightText highlightText={"\"c string tutorial\""}/> এখানে, "c string tutorial" হলো স্ট্রিং(string)। কম্পাইলার যখন স্ট্রিং কে কম্পাইল করে তখন স্ট্রিং এর শেষে একটি null(/0) ক্যারেক্টার যুক্ত করে দেয়।
+                সি প্রোগ্রামিং এ ক্যারেক্টারে(character) এর array কে স্ট্রিং বলা হয়। null(/0) ক্যারেক্টারের মাধ্যমে স্ট্রিং এর সমাপ্তি ঘটে। উদাহরনস্বরুপঃ <HighlightText highlightText={"\"c string tutorial\""}/> এখানে, <HighlightText highlightText={"\"c string tutorial\""}/> হলো স্ট্রিং(string)। কম্পাইলার যখন স্ট্রিং কে কম্পাইল করে তখন স্ট্রিং এর শেষে একটি null(/0) ক্যারেক্টার যুক্ত করে দেয়।
             </p>
             <h3 className="H4 md-space-bottom">C স্ট্রিং ডিক্লেয়ারেশন</h3>
             <p className="Primary-paragraph md-space-bottom">
