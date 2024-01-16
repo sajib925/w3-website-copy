@@ -15,7 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         josefin: ["Josefin Sans, sans-serif"],
-        jost: ["Jost, sans-serif"],
+        jost: ["Noto_Sans_Bengali"],
 
       },
       colors: {
