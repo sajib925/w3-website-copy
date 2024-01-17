@@ -54,7 +54,7 @@ interface TableProps<T> {
     headerData: Array<{ [key: string]: string }>;
 }
 
-const DynamicTable: React.FC<TableProps<{ col1: string; col2: string; col3: string; col4?: string; }>> = ({ data, headerData }) => {
+const DynamicTable: React.FC<TableProps<{ col1: string; col2: string; col3?: string; col4?: string; }>> = ({ data, headerData }) => {
     return (
         <table className="table-auto w-full border-2 border-[#E2E8F0]">
             <thead>
